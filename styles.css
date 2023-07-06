@@ -1,0 +1,166 @@
+body {
+    background-color: #141519;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 460px;
+    width: 460px;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(#20272F, #171E28);
+
+}
+
+input {
+    color: black;
+    display: none;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #273039;
+    color: #676E78;;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.star-icon {
+    box-sizing: unset;
+    background-color: #273039;
+    border-radius: 50%;
+    width: 60px;
+    min-height: 60px;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    width: 40px;
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+    height: 50px;
+    background: #FE7613;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+button:hover {
+    background-color: white;
+    color: #FE7613;;
+}
+
+label:hover{
+    background-color: #FE7613;
+    color: white
+}
+
+.evaluating-options:checked + label {
+    background-color: #FE7613;
+    color: white;
+}
+
+p {
+    font-size: clamp(1rem, 5vw, 1.2rem) ;
+    font-weight: 600;
+    color: #676E78;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem) ;
+    font-weight: 900;
+}
+
+h3 {
+    padding: 10px;
+    background-color: #273039;
+    color: #FE7613;
+    border-radius: 50px;
+}
+
+
+.thanks-card {
+    gap: unset;
+    padding: 50px 30px;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.thanks-card p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.thanks-img {
+    width: 200px;
+}
+
+@media(max-width:510px) {
+    section {
+        height: clamp(30rem, 100vw, 38rem);
+        width: 90%;
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    .star-icon {
+        width: clamp(40px, 15vw, 50px);
+        min-height: clamp(40px, 15vw, 50px);
+    }
+
+    img {
+        width: 30px;
+    }
+
+    .evaluation-card {
+        padding: clamp(1rem, 6vw, 2rem);
+    }
+
+    label {
+        width: clamp(40px, 10vw, 50px);
+        height: clamp(40px, 10vw, 50px);
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+}

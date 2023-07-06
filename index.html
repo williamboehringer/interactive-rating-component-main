@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+    <section class="evaluation-card">
+      <div class="star-icon"><img src="/images/icon-star.svg" alt=""></div>
+      <h2>How did we do?</h2>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <div>
+        <form>
+          <div class="options">
+            <input type="radio" onclick="selected(this)" name="option" class="evaluating-options" id="1" value="1">
+            <label for="1">1</label>
+            <input type="radio" onclick="selected(this)" name="option" class="evaluating-options" id="2" value="2">
+            <label for="2">2</label>
+            <input type="radio" onclick="selected(this)" name="option" class="evaluating-options" id="3" value="3">
+            <label for="3">3</label>
+            <input type="radio" onclick="selected(this)" name="option" class="evaluating-options" id="4" value="4">
+            <label for="4">4</label>
+            <input type="radio" onclick="selected(this)" name="option" class="evaluating-options" id="5" value="5">
+            <label for="5">5</label>
+          </div>
+          <button class="btn" id="btn">S U B M I T</button>
+      </form>
+      </div>
+    </section>
+    <section class="thanks-card">
+        <img src="./images/illustration-thank-you.svg" class="thanks-img" alt="thank-you-card-img">
+      <h3 class="message"></h3>
+      <div class="thanks">
+        <h2>Thank you!</h2>
+      </div>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in touch!
+      </p>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
