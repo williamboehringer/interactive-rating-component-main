@@ -18,7 +18,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    height: 460px;
     width: 460px;
     padding: 30px;
     border-radius: 25px;
